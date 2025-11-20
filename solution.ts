@@ -18,6 +18,7 @@ const getLength = (input: string | number[]): number => {
     }
 };
 
+
 class Person{
    name:string;
    age:number;

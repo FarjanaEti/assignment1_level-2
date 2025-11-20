@@ -37,7 +37,8 @@ API স্ট্যাটাস কোড
 
 Order বা workflow এর বিভিন্ন স্টেট
 
-Numeric Enum Example:
+উদাহরণ:(Numeric Enum )
+
 enum OrderStatus {
 Pending,  
  Shipped,  
@@ -47,7 +48,8 @@ Cancelled
 let status: OrderStatus = OrderStatus.Shipped;
 console.log(status);
 
-String Enum Example:
+উদাহরণ:(String Enum)
+
 enum UserRoles {
 Admin = "Admin",
 Editor = "Editor",
