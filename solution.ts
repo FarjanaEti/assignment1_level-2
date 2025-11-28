@@ -62,9 +62,11 @@ interface Book{
    isAvailable:boolean;                           
 }
 
-const printBookDetails=(book:Book)=>{
-console.log(`Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable === true?"Yes":"No"}`)
-}
+const printBookDetails = (book: Book): string => {
+  return `Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${
+    book.isAvailable ? "Yes" : "No"
+  }`;
+};
 
 function getUniqueValues<T>(array1: T[], array2: T[]): T[] {
     const result: T[] = [];
